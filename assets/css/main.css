@@ -1,3 +1,50 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all .3s ease; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    margin: 12em 0!important;
+}
+
+.smart-scroll{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.scrolled-down{
+     transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up{
+     transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+
+.nav-link {
+    color: #000;
+    letter-spacing: 0.1em;
+    -webkit-transition: .3s all ease-out;
+    -moz-transition: .3s all ease-out;
+    transition: .3s all ease-out;
+}
+
+.nav-link.active, 
+.nav-link:hover {
+    color: #fff;
+    transition: all 0.3s;
+    font-weight: 400!important;
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
