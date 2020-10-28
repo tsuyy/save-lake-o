@@ -7,6 +7,8 @@
     <title>COLAB</title>
     <!-- normalize css --> 
     <link rel="stylesheet" href="assets/css/normalize.css" type="text/css">
+    <!-- mapbox css-->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -44,7 +46,6 @@
                     </li>
                 </ul>
             </div>
-            
         </nav>
     </header>
     <div class="container">
@@ -60,6 +61,9 @@
                 </div>
             </div>
         </section>
+    </div>
+    <div id='map'></div>
+    <div class="container">
         <section class="page-section" id="1">
             <div class="row justify-content-center">
 
@@ -179,6 +183,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <!-- mapbox-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/scripts/main.js"></script>
 </body>

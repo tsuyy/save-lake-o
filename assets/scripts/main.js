@@ -1,4 +1,19 @@
 $(document).ready(function() {
+
+    // MAPBOX CONFIG
+    mapboxgl.accessToken = 'pk.eyJ1IjoidHN1eSIsImEiOiJjazBsaWl5MXgwd2hqM2VxbzVlcGdnanlvIn0.V75WjSKJrKNSvazBDuQDeg';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/tsuy/ckgtuzv2i02jm19nz0f1khw5b/draft', // stylesheet location
+        center: [-80.782, 26.948], // starting position [lng, lat]
+        zoom: 9.49 // starting zoom
+    });
+
+    map.on('click', function(e) {
+        console.log("hi");
+    });
+
+
     // toggle active on click
     $(document).on('click', '.nav-items a', function() {
         $('.nav-items a').removeClass('active');
