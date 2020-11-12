@@ -4,9 +4,9 @@ var config = {
     showMarkers: false,
     theme: 'light',
     alignment: 'left',
-    title: 'Title',
-    subtitle: 'A descriptive and interesting subtitle to draw in the reader',
-    byline: 'By a Digital Storyteller',
+    title: 'How did we get here?',
+    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    byline: '',
     footer: 'Source: source citations, etc.',
     chapters: [
         {

@@ -32,8 +32,8 @@ body {
 
 
 section {
-    margin: 12em 0!important;
-    background-color: #fafafa;
+    padding: 8em 0 2em 0!important;
+    background-color: #fafafa
 }
 
 .smart-scroll{
@@ -80,8 +80,7 @@ section {
     }
 
     #header {
-        margin: 3vh auto;
-        width: 90vw;
+        width: 100vw;
         padding: 2vh;
         text-align: center;
     }

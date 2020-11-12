@@ -52,7 +52,7 @@ $(document).ready(function() {
     }
     
     if (config.subtitle) {
-        var subtitleText = document.createElement('h2');
+        var subtitleText = document.createElement('h3');
         subtitleText.innerText = config.subtitle;
         header.appendChild(subtitleText);
     }
@@ -74,7 +74,7 @@ $(document).ready(function() {
         var chapter = document.createElement('div');
         
         if (record.title) {
-            var title = document.createElement('h3');
+            var title = document.createElement('h5');
             title.innerText = record.title;
             chapter.appendChild(title);
         }
