@@ -21,6 +21,11 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    margin:0; 
+    padding:0; 
+}
+
 /* ==========================================================================
     Typography
    ========================================================================== */
@@ -28,6 +33,7 @@ html {
 
 section {
     margin: 12em 0!important;
+    background-color: #fafafa;
 }
 
 .smart-scroll{
@@ -38,13 +44,13 @@ section {
     z-index: 1030;
 }
 
-.scrolled-down{
+/* .scrolled-down{
      transform:translateY(-100%); transition: all 0.3s ease-in-out;
 }
 
 .scrolled-up{
      transform:translateY(0); transition: all 0.3s ease-in-out;
-}
+} */
 
 .nav-link {
     color: #000;
@@ -66,10 +72,91 @@ section {
     ========================================================================== */
 
     #map {
-        height: 70vh;
+        top:0vh;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: -5;
+    }
+
+    #header {
+        margin: 3vh auto;
+        width: 90vw;
+        padding: 2vh;
+        text-align: center;
+    }
+    #footer {
+        width: 100%;
+        min-height: 5vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        text-align: center;
+        line-height: 25px;
+        font-size: 13px;
+    }
+    #features {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        z-index: 100;
+    }
+
+    .centered {
+        width: 50vw;
+        margin: 0 auto;
+    }
+    .lefty {
+        width: 33vw;
+        margin-left: 5vw;
+    }
+    .righty {
+        width: 33vw;
+        margin-left: 62vw;
+    }
+    .light {
+        color: #444;
+        background-color: #fafafa;
+    }
+    .dark {
+        color: #fafafa;
+        background-color: #444;
+    }
+    .step {
+        padding-bottom: 50vh;
+        /* margin-bottom: 10vh; */
+        opacity: 0.25;
+    }
+    .step.active {
+        opacity: 0.9;
+    }
+
+    .step div {
+        padding:  25px 50px;
+        line-height: 25px;
+        font-size: 13px;
+    }
+
+    .step img {
         width: 100%;
     }
-    
+
+    @media (max-width: 750px) {
+        #features {
+            width: 90vw;
+            margin: 0 auto;
+        }
+    }
+
+    /* Fix issue on mobile browser where scroll breaks  */
+    .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan, 
+    .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
+        touch-action: unset;
+    }
+
+
+/* ==========================================================================
+    Scrolly-telly
+    ========================================================================== */
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen

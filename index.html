@@ -16,6 +16,9 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
     <!-- custom CSS -->
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    <!-- mapbox + scrollama scripts-->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
 </head>
 <body>
     <header>
@@ -52,7 +55,7 @@
         <section class="page-section" id="0">
             <div class="row justify-content-center">
                 <div class="col-10">
-                    <h1 class="text-center">BIG TITLE</h1>
+                    <h1 class="text-center">Intro</h1>
                     <p class="text-center">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
@@ -62,13 +65,11 @@
             </div>
         </section>
     </div>
-    <div id='map'></div>
     <div class="container">
         <section class="page-section" id="1">
             <div class="row justify-content-center">
-
                 <div class="col-10">
-                    <h1 class="text-center">THE PAST</h1>
+                    <h1 class="text-center">What's happening?</h1>
                 </div>
                 <div class="col-md-5 col-10">
                     <p>
@@ -96,7 +97,7 @@
         <section class="page-section" id="2">
             <div class="row justify-content-center">
                 <div class="col-10">
-                    <h1 class="text-center">HOW WE GOT HERE</h1>
+                    <h1 class="text-center">How did we get here?</h1>
                 </div>
                 <div class="col-10">
                     <p>
@@ -106,35 +107,25 @@
                         irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                     </p>
+                     
                 </div>
                 <div class="col-10 text-center">
                     <img src="assets/img/placeholder-img.jpg" class="img-fluid">
                 </div>
             </div>
         </section>
-        <section class="page-section" id="3">
-            <div class="row justify-content-center">
-                <div class="col-10">
-                    <h1 class="text-center">THE PRESENT</h1>
-                </div>
-                <div class="col-10">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    </p>
-                </div>
-            </div>
-        </section>
+    </div>
+    <div class="page-section" id='3'>
+        <div id="map"></div>
+        <div id="story"></div>
+    </div>
+    <div class="container">
         <section class="page-section" id="4">
             <div class="row justify-content-center">
-                <div class="col-md-5 col-10">
-                    <img src="assets/img/placeholder-img.jpg" class="img-fluid">
+                <div class="col-10">
+                    <h1 class="text-center">What can we do?</h1>
                 </div>
-                <div class="col-md-5 col-10">
-                    <h1 class="text-center">BIG TITLE</h1>
+                <div class="col-10">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
@@ -148,7 +139,7 @@
         <section class="page-section" id="5">
             <div class="row justify-content-center">
                 <div class="col-10">
-                    <h1 class="text-center">THE FUTURE</h1>
+                    <h1 class="text-center">Call to action</h1>
                 </div>
                 <div class="col-md-5 col-10">
                     <p>
@@ -168,7 +159,6 @@
         </section>
         <section>
             <div class="row justify-content-center footer">
-
             </div>
         </section>
     </div>
@@ -185,6 +175,7 @@
         crossorigin="anonymous"></script>
     <!-- mapbox-->
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <script src="assets/scripts/config.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/scripts/main.js"></script>
 </body>
