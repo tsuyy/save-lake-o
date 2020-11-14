@@ -202,7 +202,7 @@ $(document).ready(function() {
     // }
 
     // img transition on scroll
-    const checkpoint = 400;
+    const checkpoint = 500;
 
     window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
