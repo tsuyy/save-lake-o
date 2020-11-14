@@ -52,7 +52,7 @@ $(document).ready(function() {
     }
     
     if (config.subtitle) {
-        var subtitleText = document.createElement('h3');
+        var subtitleText = document.createElement('h5');
         subtitleText.innerText = config.subtitle;
         header.appendChild(subtitleText);
     }
@@ -74,7 +74,7 @@ $(document).ready(function() {
         var chapter = document.createElement('div');
         
         if (record.title) {
-            var title = document.createElement('h5');
+            var title = document.createElement('h3');
             title.innerText = record.title;
             chapter.appendChild(title);
         }
@@ -200,6 +200,19 @@ $(document).ready(function() {
     //         last_scroll_top = scroll_top;
     //     });
     // }
+
+    // img transition on scroll
+    const checkpoint = 400;
+
+    window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll <= checkpoint) {
+        opacity = 1 - currentScroll / checkpoint;
+    } else {
+        opacity = 0;
+    }
+    document.querySelector(".transition").style.opacity = opacity;
+    });
 
 	
 });

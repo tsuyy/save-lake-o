@@ -32,7 +32,7 @@ body {
 
 
 section {
-    padding: 8em 0 2em 0!important;
+    padding: 5em 0 5em 0!important;
     background-color: #fafafa
 }
 
@@ -52,6 +52,25 @@ section {
      transform:translateY(0); transition: all 0.3s ease-in-out;
 } */
 
+.block {
+    height: 40vh;
+}
+
+.img-wrapper {
+    display: grid;
+    height: 50vh;
+}
+
+img.transition {
+    opacity: 1;
+}
+  
+.img-wrapper img {
+    grid-column: 1;
+    grid-row: 1;
+    transition: opacity 0.3s;
+}
+
 .nav-link {
     color: #000;
     letter-spacing: 0.1em;
@@ -60,9 +79,13 @@ section {
     transition: .3s all ease-out;
 }
 
+a.navbar-brand{
+    color: blue;
+}
+
 .nav-link.active, 
 .nav-link:hover {
-    color: #fff;
+    color: blue;
     transition: all 0.3s;
     font-weight: 400!important;
 }
@@ -112,12 +135,12 @@ section {
         margin-left: 62vw;
     }
     .light {
-        color: #444;
+        color: #000;
         background-color: #fafafa;
     }
     .dark {
         color: #fafafa;
-        background-color: #444;
+        background-color: #000;
     }
     .step {
         padding-bottom: 50vh;
