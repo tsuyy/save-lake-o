@@ -32,7 +32,7 @@ body {
 
 
 section {
-    padding: 5em 0 5em 0!important;
+    padding: 5em 0!important;
     background-color: #fafafa
 }
 
@@ -53,12 +53,12 @@ section {
 } */
 
 .block {
-    height: 40vh;
+    height: 20vh;
 }
 
 .img-wrapper {
     display: grid;
-    height: 50vh;
+    height: 60vh;
 }
 
 img.transition {
@@ -184,6 +184,15 @@ a.navbar-brand{
 @media only screen
 and (min-device-width : 100px)
 and (max-device-width : 515px) {
+
+    .block {
+        height: 40vh;
+    }
+
+    .img-wrapper {
+        display: grid;
+        height: 20vh;
+    }
 }
 
 /* iPads (portrait and landscape) ----------- */
