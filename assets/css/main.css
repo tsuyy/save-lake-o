@@ -36,6 +36,10 @@ section {
     background-color: #fafafa
 }
 
+.landing {
+    margin-top: -5em!important;
+}
+
 .smart-scroll{
     position: fixed;
     top: 0;

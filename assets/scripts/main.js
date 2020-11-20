@@ -202,13 +202,13 @@ $(document).ready(function() {
     // }
 
     // img transition on scroll
-    const checkpoint = 600;
+    const checkpoint = 3000;
 
     window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
     console.log(currentScroll);
     if (currentScroll <= checkpoint) {
-        opacity = 1 - currentScroll / checkpoint;
+        opacity = 1 - (currentScroll / checkpoint);
     } else {
         opacity = 0;
     }
