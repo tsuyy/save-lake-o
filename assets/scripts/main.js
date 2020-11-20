@@ -206,6 +206,7 @@ $(document).ready(function() {
 
     window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
+    console.log(currentScroll);
     if (currentScroll <= checkpoint) {
         opacity = 1 - currentScroll / checkpoint;
     } else {
