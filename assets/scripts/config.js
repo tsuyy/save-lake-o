@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/tsuy/ckgtuzv2i02jm19nz0f1khw5b/draft',
+    style: 'mapbox://styles/tsuy/ckgtuzv2i02jm19nz0f1khw5b',
     accessToken: 'pk.eyJ1IjoidHN1eSIsImEiOiJjazBsaWl5MXgwd2hqM2VxbzVlcGdnanlvIn0.V75WjSKJrKNSvazBDuQDeg',
     showMarkers: false,
     theme: 'light',
@@ -21,16 +21,20 @@ var config = {
                 bearing: 0
             },
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1
-                // }
+                {
+                    layer: 'county-population',
+                    opacity: 0.9
+                },
+                {
+                    layer: 'map-label',
+                    opacity: 0.9
+                }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+                {
+                    layer: 'map-label',
+                    opacity: 0
+                }
             ]
         },
         {
@@ -44,7 +48,12 @@ var config = {
                 pitch: 30,
                 bearing: 0
             },
-            onChapterEnter: [],
+            onChapterEnter: [
+                        // {
+                //     layer: 'layer-name',
+                //     opacity: 1
+                // }
+            ],
             onChapterExit: []
         },
         {

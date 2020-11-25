@@ -174,7 +174,53 @@ $(document).ready(function() {
             }
         });
     });
-    
+
+    var scale = new mapboxgl.ScaleControl({
+        maxWidth: 80,
+        unit: 'imperial'
+        });
+    map.addControl(scale);
+         
+    scale.setUnit('imperial');
+
+    map.on('mousemove', function(e) {
+        console.log("hi");
+    });
+      
+
+    // map.on('load', function () {
+    //     map.addSource('flow', {
+    //         'type': 'geojson',
+    //         'data': {
+    //             'type': 'Feature',
+    //             'properties': {},
+    //             'geometry': {
+    //                 'type': 'LineString',
+    //                 'coordinates': [
+    //                     [-81.04222, 27.35123 ],
+    //                     [-81.01658, 27.33415],
+    //                     [-81.01979, 27.29145],
+    //                 ]
+    //             }
+    //         }
+    //     });
+
+    //     map.addLayer({
+    //         'id': 'route',
+    //         'type': 'line',
+    //         'source': 'flow',
+    //         'layout': {
+    //             'line-join': 'round',
+    //             'line-cap': 'round'
+    //         },
+    //         'paint': {
+    //             'line-color': '#ed6498',
+    //             'line-width': 5,
+    //             'line-opacity': 0.8
+    //         }
+    //     });
+    // });
+            
     // setup resize event
     window.addEventListener('resize', scroller.resize);
 
@@ -202,19 +248,18 @@ $(document).ready(function() {
     // }
 
     // img transition on scroll
-    const checkpoint = 3000;
+    const checkpoint = 5000;
 
     window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
     console.log(currentScroll);
-    if (currentScroll <= checkpoint) {
+    if (currentScroll <= 1300) {
         opacity = 1 - (currentScroll / checkpoint);
     } else {
         opacity = 0;
     }
     document.querySelector(".transition").style.opacity = opacity;
     });
-
 	
 });
 

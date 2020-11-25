@@ -12,11 +12,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Animate.CSS-->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
     <!-- custom CSS -->
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <!-- mapbox + scrollama scripts-->
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
@@ -117,8 +114,8 @@
             </div>
         </div>
         <div class="model">
-          <h1>The Model For Display</h1>
-          <video src="assets/img/videoplayback.mp4"></video>
+          <!-- <h1>The Model For Display</h1> -->
+          <video src="assets/video/lake-o-3d.mp4"></video>
         </div>
     </section>
     <div class="page-section" id='3'>
@@ -146,15 +143,246 @@
     <section class="page-section" id="5">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-10">
+                <div class="col-4"></div>
+                <div class="col-6">
                     <h1 class="text-center">Get involved</h1>
-                </div>
-                <div class="col-10">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        We are the problem, but we are also the solution. By following some simple steps, we can help prevent algal blooms.
                     </p>
+                    <div id="collapsible">
+                        <div id="collapse-btn-group">
+                            <button class="btn" type="button" data-toggle="collapse" data-target="#care-collapse" aria-expanded="false" aria-controls="collapseExample">
+                                Care for your land
+                            </button>
+                            <button class="btn" type="button" data-toggle="collapse" data-target="#mindful-collapse" aria-expanded="false" aria-controls="collapseExample">
+                                Mindful farming
+                            </button>
+                            <button class="btn" type="button" data-toggle="collapse" data-target="#future-collapse" aria-expanded="false" aria-controls="collapseExample">
+                                A cleaner future
+                            </button>
+                        </div>
+                        <div class="collapse" id="care-collapse">
+                            <div class="accordion" id="care-accordion">
+                                <div class="card">
+                                  <div class="card-header" id="c-headingOne">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#c-collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Properly identify harmful algal blooms
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="c-collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#care-accordion">
+                                    <div class="card-body">
+                                        Accurate identification of harmful algal blooms is the first step to protecting your family, pets, and surrounding wildlife from the negative effects of algal toxin exposure. 
+                                        Depending on the waterbody, a potentially harmful bloom may appear in parallel streaks or clumped dots. Some may look like spilled blue, green, white paint or even turn the water to a bright emerald green.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" id="c-headingTwo">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#c-collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Dispose organic materials
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="c-collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#care-accordion">
+                                    <div class="card-body">
+                                        Following yard work, leaves, grass and other debris should be bagged and removed from the property to prevent them from decaying. Animal waste as well, contains nitrogen and bacteria that can pollute the waterways when it rains. When organic materials decompose in freshwater, they release undesirable nutrients that are responsible for producing algae growth. It is important to dispose organic materials properly to reduce excess nutrients from building up and entering the waterbody.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" id="c-headingThree">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#c-collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Establish a buffer zone between developed land and water
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="c-collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#care-accordion">
+                                    <div class="card-body">
+                                        Allow native flowering, deep-rooted vegetation to grow 3 to 5 feet from the edge of the lake or pond shoreline in a vegetative buffer.  This method of building a buffer zone would stop runoff containing sediment, trash, and other organic materials from entering lakes and ponds during rainstorms. 
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="c-headingFour">
+                                      <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#c-collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Reduce excess nutrients
+                                        </button>
+                                      </h2>
+                                    </div>
+                                    <div id="c-collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#care-accordion">
+                                      <div class="card-body">
+                                        For lakes and ponds with chronic nutrient problems, the application of “phosphorous-locking” technologies, such as Phoslock and Alum, can make a significant impact. When applied by a licensed professional, these products can improve water clarity and reduce undesirable nutrients by removing free reactive phosphorus from the water.                                  </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="c-headingFive">
+                                      <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#c-collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            Understanding government’s response
+                                        </button>
+                                      </h2>
+                                    </div>
+                                    <div id="c-collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#care-accordion">
+                                      <div class="card-body">
+                                            Knowing where HABs are occurring—and whether the government is responding—is a critical first step to keeping our waterways, families, and ecosystems safe. Sometimes we do not understand that a solution will take several years of progress. In this time, politicians who started working on possible solutions may not be reelected.
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="c-headingSix">
+                                      <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#c-collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            Convey relating knowledge
+                                        </button>
+                                      </h2>
+                                    </div>
+                                    <div id="c-collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#care-accordion">
+                                      <div class="card-body">
+                                        Young people may not know about the cause and effect of the algal bloom issue. Teachers should strive to raise awareness, educate and encourage the younger generation about how to get involved and be a part of the solution.                                  
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="mindful-collapse">
+                            <div class="accordion" id="mindful-accordion">
+                                <div class="card">
+                                  <div class="card-header" id="m-headingOne">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#m-collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Better farming practices
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="m-collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#mindful-accordion">
+                                    <div class="card-body">
+                                        On farms, regenerative practices that improve soil health help to capture rain where it falls instead of allowing nutrient-packed runoff to wash into bodies of water. We can plant cover crops, diversify what’s grown, reduce tillage, and properly apply compost and manure to prevent water runoff.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" id="m-headingTwo">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#m-collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Follow science
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="m-collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#mindful-accordion">
+                                    <div class="card-body">
+                                        Farmers and cattlemen are stewards of the land. We need to take care of endangered species and habitats. We need to have water reservoirs, and make sure everything is done based on science. 
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" id="m-headingThree">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#m-collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Collaborate with government
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="m-collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#mindful-accordion">
+                                    <div class="card-body">
+                                        Government agencies and us have a common goal. We can work with NGOs and University of Florida to help with research that informs best practices.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="m-headingFour">
+                                      <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#m-collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Choose the right fertilizers
+                                        </button>
+                                      </h2>
+                                    </div>
+                                    <div id="m-collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#mindful-accordion">
+                                      <div class="card-body">
+                                        We can control the annual contribution of phosphorus by paying attention to the four major fertilization factors (4Rs);  right rate, right source, right time and right place. By choosing the right fertilizers with fewer phosphorus, we can help keep soil healthy and prevent algal blooms from forming.
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="future-collapse">
+                            <div class="accordion" id="furture-accordion">
+                                <div class="card">
+                                    <div class="card-header" id="f-headingOne">
+                                        <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#f-collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Reward regenerative farming practices
+                                        </button>
+                                        </h2>
+                                    </div>
+                                    <div id="f-collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#future-accordionn">
+                                        <div class="card-body">
+                                            Expand adoption of good farming practices by partnering with states and others to financially reward farmers who plant cover crops. Improve federal initiatives like the federal crop insurance program to empower farmers to adopt regenerative farming practices. Incentivize smart cultivation practices in the Farm Bill, a law that sets agricultural policies.                            </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="f-headingTwo">
+                                        <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#f-collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Establish green infrastructure
+                                        </button>
+                                        </h2>
+                                    </div>
+                                    <div id="f-collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#future-accordion">
+                                        <div class="card-body">
+                                            It’s not just farms that produce tainted runoff. Every year, an estimated 10 trillion gallons of untreated stormwater washes off paved surfaces, through storm sewer systems, and into waterways. This runoff can contain high levels of nutrients that can trigger HABs. Using more green infrastructure in cities can be a solution. Adding green roofs, planting trees, and building gardens of rain-absorbing plants all capture rainwater before it flows into waterways.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="f-headingThree">
+                                        <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#f-collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Aeration
+                                        </button>
+                                        </h2>
+                                    </div>
+                                    <div id="f-collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#future-accordion">
+                                        <div class="card-body">
+                                            Healthy levels of dissolved oxygen in the lake are crucial. Oxygen helps break down the decaying vegetation and other nutrients in the water. Aeration is an environmentally friendly cleaning method that rejuvenates water bodies by increasing the level of oxygen in the water. This technique avoids the use of chemicals and is suitable for use in larger ponds.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="f-headingFour">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#f-collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                Monitoring, Mitigation, and Collaboration
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="f-collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#future-accordion">
+                                        <div class="card-body">
+                                            Improved monitoring and increased research into harmful algal blooms is much needed to raise awareness of the issue. A nationwide system for collecting data on and responding to HABs can help forecast future blooms and communicate it to the public. These efforts could speed up emergency response and reduce harm to the environment, wildlife, and people.
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="f-headingFive">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#f-collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                    New Developments
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="f-collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#future-accordion">
+                                            <div class="card-body">
+                                                To preserve conditions of the lake and wildlife, new developments should focus on implementing sewer system connections rather than the use of septic tanks to avoid complications of leakage linked to HABs. With suitable encouragement and incentives from the government, developers can begin to allocate green areas to help nurture the citizen’s relationship with nature at a community level. Having a dedicated group to mobilize initiatives and efforts could attract stakeholders and encourage positive actions in future infrastructure or redevelopments.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
