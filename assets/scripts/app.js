@@ -1,8 +1,8 @@
-const intro = document.querySelector(".model");
-const video = intro.querySelector("video");
-const text = intro.querySelector("h1");
-const imgWrapper = document.querySelector(".img-wrapper");
-const fish = imgWrapper.querySelector(".f_2");
+const model = document.querySelector(".model");
+const video = model.querySelector("video");
+// const text = intro.querySelector("h1");
+// const imgWrapper = document.querySelector(".img-wrapper");
+// const fish = imgWrapper.querySelector(".f_2");
 
 //SCROLLMAGIC
 const controller = new ScrollMagic.Controller();
@@ -10,11 +10,11 @@ const controller = new ScrollMagic.Controller();
 //Scenes
 let scene = new ScrollMagic.Scene({
   duration: 1000,
-  triggerElement: intro,
+  triggerElement: model,
   triggerHook: 0
 })
   .addIndicators()
-  .setPin(intro)
+  .setPin(model)
   .addTo(controller)
   .on("enter", function () {
     video.play();

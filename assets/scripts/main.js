@@ -183,40 +183,24 @@ $(document).ready(function() {
          
     scale.setUnit('imperial');
 
-    map.on('mousemove', function(e) {
-        console.log("hi");
-    });
-      
-
-    // map.on('load', function () {
-    //     map.addSource('flow', {
-    //         'type': 'geojson',
-    //         'data': {
-    //             'type': 'Feature',
-    //             'properties': {},
-    //             'geometry': {
-    //                 'type': 'LineString',
-    //                 'coordinates': [
-    //                     [-81.04222, 27.35123 ],
-    //                     [-81.01658, 27.33415],
-    //                     [-81.01979, 27.29145],
-    //                 ]
-    //             }
-    //         }
+    // map.on('load', function() {
+    //     map.addSource("myImageSource", {
+    //         "type": "image",
+    //         "url": "https://docs.mapbox.com/mapbox-gl-js/assets/radar.gif",
+    //         "coordinates": [
+    //             [-81.91794,27.40679],
+    //             [ -80.19323, 27.34848],
+    //             [-79.98160, 26.25612],
+    //             [-81.84012,26.13169]
+    //         ]
     //     });
 
     //     map.addLayer({
-    //         'id': 'route',
-    //         'type': 'line',
-    //         'source': 'flow',
-    //         'layout': {
-    //             'line-join': 'round',
-    //             'line-cap': 'round'
-    //         },
-    //         'paint': {
-    //             'line-color': '#ed6498',
-    //             'line-width': 5,
-    //             'line-opacity': 0.8
+    //         "id": "overlay",
+    //         "source": "myImageSource",
+    //         "type": "raster",
+    //         "paint": {
+    //         "raster-opacity": 0
     //         }
     //     });
     // });
@@ -252,7 +236,7 @@ $(document).ready(function() {
 
     window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
-    console.log(currentScroll);
+    // console.log(currentScroll);
     if (currentScroll <= 1300) {
         opacity = 1 - (currentScroll / checkpoint);
     } else {

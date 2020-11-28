@@ -33,7 +33,7 @@ body {
 
 
 section {
-    padding: 5em 0!important;
+    padding: 2em 0!important;
     background-color: #fafafa
 }
 
@@ -58,7 +58,7 @@ section {
 } */
 
 .block {
-    height: 20vh;
+    height: 40vh;
 }
 
 .img-wrapper {
@@ -84,16 +84,10 @@ img.transition {
     transition: .3s all ease-out;
 }
 
-a.navbar-brand{
-    color: blue;
+.nav-link, .btn {
+    margin-left: 2em;
 }
 
-.nav-link.active,
-.nav-link:hover {
-    color: blue;
-    transition: all 0.3s;
-    font-weight: 400!important;
-}
 
 /* ========================
     model scroll animation
@@ -109,14 +103,14 @@ a.navbar-brand{
     object-fit: cover;
 }
   
-.model h1 {
+/* .model h1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 80px;
     color: white;
-}
+} */
 
 /* ==========================================================================
     Map
@@ -145,8 +139,8 @@ a.navbar-brand{
         font-size: 13px;
     }
     #features {
-        padding-top: 10vh;
-        padding-bottom: 10vh;
+        padding-top: 12.5vh;
+        padding-bottom: 12.5vh;
         z-index: 100;
     }
 
@@ -165,6 +159,7 @@ a.navbar-brand{
     .light {
         color: #000;
         background-color: #fafafa;
+        box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.05);
     }
     .dark {
         color: #fafafa;
