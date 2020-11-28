@@ -13,20 +13,24 @@ var config = {
             id: '00',
             title: '',
             image: '',
-            description: 'Before the development of Florida’s waterways, the historic water flow was very different. Lake Okeechobee was 25% larger than today, deeper at about 20 to 21 feet with wide vegetation surrounding the perimeter, and its water flowed slowly south over more than 8 million acres. The modifications to the waterways, manipulation of water flow, the development of agriculture and fertilizer use, and the development of lands and growing populations all play a part in Florida’s nutrient pollution.            ',
+            description: 'Before the development of Florida’s waterways, the historic water flow was very different. Lake Okeechobee was 25% larger than today, deeper at about 20 to 21 feet with wide vegetation surrounding the perimeter, and its water flowed slowly south over more than 8 million acres. The modifications to the waterways, manipulation of water flow, the development of agriculture and fertilizer use, and the development of lands and growing populations all play a part in Florida’s nutrient pollution.',
             location: {
-                center: [-81.70388, 27.64895 ],
-                zoom: 7.26,
-                pitch: 42,
+                center: [-82.38083, 27.49391 ],
+                zoom: 6.9,
+                pitch: 0,
                 bearing: 0
             },
             onChapterEnter: [
                 {
-                    layer: 'overlay',
-                    opacity: 0.5
+                    layer: 'w-overlay',
+                    opacity: 0.9
                 }
             ],
             onChapterExit: [
+                {
+                    layer: 'w-overlay',
+                    opacity: 0
+                }
             ]
         },
         {
@@ -41,8 +45,16 @@ var config = {
                 bearing: 0
             },
             onChapterEnter: [
+                {
+                    layer: 'st-augustine',
+                    opacity: 0.9
+                }
             ],
             onChapterExit: [
+                {
+                    layer: 'st-augustine',
+                    opacity: 0
+                }
             ]
         },
         {
@@ -89,16 +101,16 @@ var config = {
                 bearing: 0
             },
             onChapterEnter: [
-                {
-                    layer: 'overlay',
-                    opacity: 0.5
-                }
+                // {
+                //     layer: 'overlay',
+                //     opacity: 0.5
+                // }
             ],
             onChapterExit: [
-                {
-                    layer: 'overlay',
-                    opacity: 0
-                }
+                // {
+                //     layer: 'overlay',
+                //     opacity: 0
+                // }
             ]
         },
         {

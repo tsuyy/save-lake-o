@@ -184,25 +184,26 @@ $(document).ready(function() {
     scale.setUnit('imperial');
 
     // map.on('load', function() {
-    //     map.addSource("myImageSource", {
+    //     map.addSource("waterflow", {
     //         "type": "image",
-    //         "url": "https://yvntsu.design/assets/images/wts-thumb.png",
+    //         "url": "https://raw.githubusercontent.com/tsuyy/colab-2020/main/assets/img/waterflow.png",
     //         "coordinates": [
-    //             [-81.91794,27.40679],
-    //             [ -80.19323, 27.34848],
-    //             [-79.98160, 26.25612],
-    //             [-81.84012,26.13169]
+    //             [-81.75544, 28.39105],
+    //             [-80.30398, 28.39105],
+    //             [-80.30398, 25.03855],
+    //             [-81.75544, 25.03855]
     //         ]
     //     });
 
     //     map.addLayer({
-    //         "id": "overlay",
-    //         "source": "myImageSource",
+    //         "id": "w-overlay",
+    //         "source": "waterflow",
     //         "type": "raster",
     //         "paint": {
     //         "raster-opacity": 0
     //         }
     //     });
+
     // });
             
     // setup resize event
