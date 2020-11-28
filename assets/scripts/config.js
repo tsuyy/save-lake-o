@@ -23,13 +23,18 @@ var config = {
             onChapterEnter: [
                 {
                     
-                    layer: 'w-overlay',
-                    opacity: 0.5
+                    layer: 'locks-and-dams',
+                    opacity: 0
+                },
+                {
+                    
+                    layer: 'hw-overlay',
+                    opacity: 0.9
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'w-overlay',
+                    layer: 'hw-overlay',
                     opacity: 0
                 }
             ]

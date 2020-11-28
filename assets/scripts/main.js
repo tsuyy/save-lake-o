@@ -183,26 +183,46 @@ $(document).ready(function() {
          
     scale.setUnit('imperial');
 
-    map.on('load', function() {
-        map.addSource("waterflow", {
-            "type": "image",
-            "url": "https://raw.githubusercontent.com/tsuyy/colab-2020/main/assets/img/hf-v3.png",
-            "coordinates": [
-                [-81.75544, 28.39105],
-                [-80.30398, 28.39105],
-                [-80.30398, 25.03855],
-                [-81.75544, 25.03855]
-            ]
-        });
+    // map.on('load', function() {
+    //     map.addSource("hw", {
+    //         "type": "image",
+    //         "url": "https://raw.githubusercontent.com/tsuyy/colab-2020/main/assets/img/hf-v1.png",
+    //         "coordinates": [
+    //             [-81.91691, 28.55452 ],
+    //             [-80.20719, 28.55452 ],
+    //             [-80.30398, 25.20659],
+    //             [-81.75544, 25.20659]
+    //         ]
+    //     });
 
-        map.addLayer({
-            "id": "w-overlay",
-            "source": "waterflow",
-            "type": "raster",
-            "paint": {
-            "raster-opacity": 0
-            }
-        });
+    //     map.addLayer({
+    //         "id": "hw-overlay",
+    //         "source": "hw",
+    //         "type": "raster",
+    //         "paint": {
+    //         "raster-opacity": 0
+    //         }
+    //     });
+
+        // map.addSource("cw", {
+        //     "type": "image",
+        //     "url": "https://raw.githubusercontent.com/tsuyy/colab-2020/main/assets/img/current-flow.png",
+        //     "coordinates": [
+        //         [-81.75544, 28.39105],
+        //         [-80.30398, 28.39105],
+        //         [-80.30398, 25.03855],
+        //         [-81.75544, 25.03855]
+        //     ]
+        // });
+
+        // map.addLayer({
+        //     "id": "cw-overlay",
+        //     "source": "cw",
+        //     "type": "raster",
+        //     "paint": {
+        //     "raster-opacity": 1
+        //     }
+        // });
 
     });
             
