@@ -22,8 +22,9 @@ var config = {
             },
             onChapterEnter: [
                 {
+                    
                     layer: 'w-overlay',
-                    opacity: 0.9
+                    opacity: 0.5
                 }
             ],
             onChapterExit: [
@@ -171,9 +172,17 @@ var config = {
                 bearing: 0
             },
             onChapterEnter: [
-                
+                {
+                    layer: 'locks-and-dams',
+                    opacity: 0.9
+                }
             ],
-            onChapterExit: []
+            onChapterExit: [
+                {
+                    layer: 'locks-and-dams',
+                    opacity: 0
+                }
+            ]
         },
         {
             id: '07',

@@ -183,28 +183,28 @@ $(document).ready(function() {
          
     scale.setUnit('imperial');
 
-    // map.on('load', function() {
-    //     map.addSource("waterflow", {
-    //         "type": "image",
-    //         "url": "https://raw.githubusercontent.com/tsuyy/colab-2020/main/assets/img/historic-flow.png",
-    //         "coordinates": [
-    //             [-81.75544, 28.39105],
-    //             [-80.30398, 28.39105],
-    //             [-80.30398, 25.03855],
-    //             [-81.75544, 25.03855]
-    //         ]
-    //     });
+    map.on('load', function() {
+        map.addSource("waterflow", {
+            "type": "image",
+            "url": "https://raw.githubusercontent.com/tsuyy/colab-2020/main/assets/img/hf-v3.png",
+            "coordinates": [
+                [-81.75544, 28.39105],
+                [-80.30398, 28.39105],
+                [-80.30398, 25.03855],
+                [-81.75544, 25.03855]
+            ]
+        });
 
-    //     map.addLayer({
-    //         "id": "w-overlay",
-    //         "source": "waterflow",
-    //         "type": "raster",
-    //         "paint": {
-    //         "raster-opacity": 0
-    //         }
-    //     });
+        map.addLayer({
+            "id": "w-overlay",
+            "source": "waterflow",
+            "type": "raster",
+            "paint": {
+            "raster-opacity": 0
+            }
+        });
 
-    // });
+    });
             
     // setup resize event
     window.addEventListener('resize', scroller.resize);
