@@ -170,7 +170,9 @@ var config = {
                 pitch: 30,
                 bearing: 0
             },
-            onChapterEnter: [],
+            onChapterEnter: [
+                
+            ],
             onChapterExit: []
         },
         {

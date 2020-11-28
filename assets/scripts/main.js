@@ -186,7 +186,7 @@ $(document).ready(function() {
     // map.on('load', function() {
     //     map.addSource("waterflow", {
     //         "type": "image",
-    //         "url": "https://raw.githubusercontent.com/tsuyy/colab-2020/main/assets/img/waterflow.png",
+    //         "url": "https://raw.githubusercontent.com/tsuyy/colab-2020/main/assets/img/historic-flow.png",
     //         "coordinates": [
     //             [-81.75544, 28.39105],
     //             [-80.30398, 28.39105],
