@@ -150,7 +150,7 @@ var config = {
         {
             id: '06',
             title: '',
-            image: '',
+            image: './assets/img/stlucielock.jpg',
             description: 'Dams are constructed including Moore Haven Lock and Dam, Ortona Lock and Dam, and St. Lucie Lock and Dam to aid with navigation and flood. In 1937, the Herbert Hoover Dike opens, a 143-mile dam surrounding Lake Okeechobee meant to reduce impacts of flooding to the surrounding area. And the connecting spillway structure at the St. Lucie Lock is constructed for flood and regulatory flow control through the St. Lucie Canal to manage the water level in Lake Okeechobee.            ',
             location: {
                 center: [-81.04080, 26.67827],

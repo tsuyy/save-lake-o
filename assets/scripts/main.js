@@ -186,7 +186,7 @@ $(document).ready(function() {
     // map.on('load', function() {
     //     map.addSource("myImageSource", {
     //         "type": "image",
-    //         "url": "https://docs.mapbox.com/mapbox-gl-js/assets/radar.gif",
+    //         "url": "https://yvntsu.design/assets/images/wts-thumb.png",
     //         "coordinates": [
     //             [-81.91794,27.40679],
     //             [ -80.19323, 27.34848],
