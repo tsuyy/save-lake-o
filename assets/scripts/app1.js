@@ -14,7 +14,7 @@ let scene = new ScrollMagic.Scene({
   triggerElement: model,
   triggerHook: 0
 })
-  .addIndicators()
+  //.addIndicators()
   .setPin(model)
   .addTo(controller);
 
@@ -35,7 +35,7 @@ let scrollpos = 0;
 let delay = 0;
 
 scene.on("update", e => {
-  scrollpos = (e.scrollPos-2500) / 200;
+  scrollpos = (e.scrollPos-2200) / 200;
   console.log(e.scrollPos);
 });
 

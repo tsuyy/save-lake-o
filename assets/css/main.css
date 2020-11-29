@@ -202,29 +202,30 @@ img.transition {
     Scrolly-telly
     ========================================================================== */
 /* photos ----------- */
-
-
-.photos img {
-  /* Just in case there are inline attributes */
-  width: 25%; /* width of container */
-  height: 80%; /* height of container */
-  object-fit: cover;
-  padding:0;
-  margin:0;
-}
-.photos img:first-child{
-  object-position: 60% 70%;
-}
-.photos img:nth-child(2){
-  object-position: 80% 70%;
-}
-.photos img:nth-child(3){
-  object-position: 20% 60%;
-}
-.photos img:nth-child(4){
-  object-position: 40% 50%;
+.photos{
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
+.crop-to-fit {
+  flex:1 1 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.crop-to-fit:nth-child(3){
+  justify-content:flex-start;
+}
+.crop-to-fit:hover {flex-grow: 3;}
+
+/* first paragraph ----------- */
+.titleText{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
