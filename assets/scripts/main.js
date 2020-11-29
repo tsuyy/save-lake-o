@@ -208,10 +208,10 @@ $(document).ready(function() {
             "type": "image",
             "url": "https://raw.githubusercontent.com/tsuyy/colab-2020/main/assets/img/current-flow.png",
             "coordinates": [
-                [-81.68929, 28.20606 ],
-                [-79.93044, 28.20606 ],
-                [-80.30398, 25.20659],
-                [-81.75544, 25.20659]
+                [-82.03354, 27.23854 ],
+                [-79.98204, 27.23854],
+                [ -79.98204, 24.83072],
+                [-82.03354, 24.83072]
             ]
         });
 

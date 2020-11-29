@@ -113,11 +113,19 @@ var config = {
             },
             onChapterEnter: [
                 {
+                    layer: 'c-43-44',
+                    opacity: 0.7
+                },
+                {
                     layer: 'cw-overlay',
                     opacity: 0.9
                 }
             ],
             onChapterExit: [
+                {
+                    layer: 'c-43-44',
+                    opacity: 0
+                },
                 {
                     layer: 'cw-overlay',
                     opacity: 0
