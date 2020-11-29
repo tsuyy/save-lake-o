@@ -28,6 +28,11 @@ var config = {
                 },
                 {
                     
+                    layer: 'cw-overlay',
+                    opacity: 0
+                },
+                {
+                    
                     layer: 'hw-overlay',
                     opacity: 0.9
                 }
@@ -43,7 +48,7 @@ var config = {
             id: '01',
             title: '1500s',
             image: '',
-            description: 'Spanish explorer Ponce de Leon brings cattle, horses and other farm animals to Florida and plants the first orange tree in St. Augustine, the beginning of Florida’s agriculture as we know it today. ',
+            description: 'Spanish explorer Ponce de Leon brings cattle, horses and other farm animals to Florida and plants the first orange tree in St. Augustine, the beginning of Florida’s agriculture as we know it today.',
             location: {
                 center: [-81.70530, 29.92375 ],
                 zoom: 9.5,
@@ -81,7 +86,7 @@ var config = {
                 },
                 {
                     layer: 'c43-44-labels',
-                    opacity: 0.7
+                    opacity: 1
                 }
             ],
             onChapterExit: [
@@ -101,22 +106,22 @@ var config = {
             image: '',
             description: 'In 1907, Everglades Drainage District begins dredging four large canals South of Lake Okeechobee to the Atlantic Ocean. By the late 1920s, about 440 miles of drainage canals are built so far.',
             location: {
-                center: [-80.99051, 27.20086],
-                zoom: 9.5,
-                pitch: 30,
+                center: [-82.38083, 27.49391 ],
+                zoom: 6.9,
+                pitch: 0,
                 bearing: 0
             },
             onChapterEnter: [
-                // {
-                //     layer: 'overlay',
-                //     opacity: 0.5
-                // }
+                {
+                    layer: 'cw-overlay',
+                    opacity: 0.9
+                }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'overlay',
-                //     opacity: 0
-                // }
+                {
+                    layer: 'cw-overlay',
+                    opacity: 0
+                }
             ]
         },
         {
@@ -151,7 +156,7 @@ var config = {
                 },
                 {
                     layer: 'county-label',
-                    opacity: 0.9
+                    opacity: 1
                 }
             ],
             onChapterExit: [
@@ -171,9 +176,9 @@ var config = {
             image: './assets/img/stlucielock.jpg',
             description: 'Dams are constructed including Moore Haven Lock and Dam, Ortona Lock and Dam, and St. Lucie Lock and Dam to aid with navigation and flood. In 1937, the Herbert Hoover Dike opens, a 143-mile dam surrounding Lake Okeechobee meant to reduce impacts of flooding to the surrounding area. And the connecting spillway structure at the St. Lucie Lock is constructed for flood and regulatory flow control through the St. Lucie Canal to manage the water level in Lake Okeechobee.            ',
             location: {
-                center: [-81.04080, 26.67827],
-                zoom: 9.5,
-                pitch: 30,
+                center: [ -81.29489, 26.92825],
+                zoom: 8.9,
+                pitch: 0,
                 bearing: 0
             },
             onChapterEnter: [
