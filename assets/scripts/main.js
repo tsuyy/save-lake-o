@@ -1,14 +1,4 @@
 $(document).ready(function() {
-
-    // mapboxgl.accessToken = 'pk.eyJ1IjoidHN1eSIsImEiOiJjazBsaWl5MXgwd2hqM2VxbzVlcGdnanlvIn0.V75WjSKJrKNSvazBDuQDeg';
-    // var map = new mapboxgl.Map({
-    //     container: 'map',
-    //     style: 'mapbox://styles/tsuy/ckgtuzv2i02jm19nz0f1khw5b/draft', // stylesheet location
-    //     center: [-80.782, 26.948], // starting position [lng, lat]
-    //     zoom: 9.49 // starting zoom
-    // });
-
-    
     
     // mapbox scripts
     var layerTypes = {
@@ -179,6 +169,7 @@ $(document).ready(function() {
         maxWidth: 80,
         unit: 'imperial'
         });
+
     map.addControl(scale);
          
     scale.setUnit('imperial');
@@ -206,7 +197,7 @@ $(document).ready(function() {
 
         map.addSource("cw", {
             "type": "image",
-            "url": "https://raw.githubusercontent.com/tsuyy/colab-2020/main/assets/img/current-flow.png",
+            "url": "https://raw.githubusercontent.com/tsuyy/colab-2020/main/assets/img/current-waterflow-v3.png",
             "coordinates": [
                 [-82.03354, 27.23854 ],
                 [-79.98204, 27.23854],
@@ -220,9 +211,10 @@ $(document).ready(function() {
             "source": "cw",
             "type": "raster",
             "paint": {
-            "raster-opacity": 1
+            "raster-opacity": 0
             }
         });
+    
 
     });
             
@@ -234,23 +226,6 @@ $(document).ready(function() {
         $('.nav-items a').removeClass('active');
         $(this).addClass('active');
     });
-
-    // $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
-
-    // // detect scroll top or down
-    // if ($('.smart-scroll').length > 0) { // check if element exists
-    //     var last_scroll_top = 0;
-    //     $(window).on('scroll', function() {
-    //         scroll_top = $(this).scrollTop();
-    //         if(scroll_top < last_scroll_top) {
-    //             $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
-    //         }
-    //         else {
-    //             $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
-    //         }
-    //         last_scroll_top = scroll_top;
-    //     });
-    // }
 
     // img transition on scroll
     const checkpoint = 5000;
