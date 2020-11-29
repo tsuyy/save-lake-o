@@ -214,11 +214,16 @@ img.transition {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-color: black;
 }
 .crop-to-fit:nth-child(3){
   justify-content:flex-start;
 }
 .crop-to-fit:hover {flex-grow: 3;}
+
+.crop-to-fit:not(:hover)>img{
+  opacity: 0.5;
+}
 
 /* first paragraph ----------- */
 .titleText{
