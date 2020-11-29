@@ -96,13 +96,13 @@ img.transition {
 .model {
     height: 100vh;
   }
-  
+
 .model video {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-  
+
 /* .model h1 {
     position: absolute;
     top: 50%;
@@ -201,6 +201,29 @@ img.transition {
 /* ==========================================================================
     Scrolly-telly
     ========================================================================== */
+/* photos ----------- */
+
+
+.photos img {
+  /* Just in case there are inline attributes */
+  width: 25%; /* width of container */
+  height: 80%; /* height of container */
+  object-fit: cover;
+  padding:0;
+  margin:0;
+}
+.photos img:first-child{
+  object-position: 60% 70%;
+}
+.photos img:nth-child(2){
+  object-position: 80% 70%;
+}
+.photos img:nth-child(3){
+  object-position: 20% 60%;
+}
+.photos img:nth-child(4){
+  object-position: 40% 50%;
+}
 
 
 /* Smartphones (portrait and landscape) ----------- */
