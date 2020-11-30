@@ -96,13 +96,13 @@ img.transition {
 .model {
     height: 100vh;
   }
-  
+
 .model video {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-  
+
 /* .model h1 {
     position: absolute;
     top: 50%;
@@ -113,7 +113,7 @@ img.transition {
 } */
 
 /* ==========================================================================
-    Map
+    Mapbox
     ========================================================================== */
 
     #map {
@@ -199,9 +199,38 @@ img.transition {
 
 
 /* ==========================================================================
-    Scrolly-telly
+    expandable photos
     ========================================================================== */
 
+.photos{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.crop-to-fit {
+  flex:1 1 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color:#fafafa;
+}
+.crop-to-fit:nth-child(3){
+  justify-content:flex-start;
+}
+.crop-to-fit:hover {flex-grow: 3;}
+
+.crop-to-fit:not(:hover)>img{
+  opacity: 0.5;
+}
+
+/* first paragraph ----------- */
+.titleText{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
