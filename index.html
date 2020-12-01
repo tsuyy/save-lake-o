@@ -28,22 +28,22 @@
             <div class="collapse navbar-collapse justify-content-end" id="main_nav">
                 <ul class="navbar-nav nav-items">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Nav</a>
+                        <a class="nav-link active" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#1">Nav</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#2">Nav</a>
+                        <a class="nav-link" href="#2">Biodiversity</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#3">Nav</a>
+                        <a class="nav-link" href="#3">History</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#4">Nav</a>
+                        <a class="nav-link" href="#4">Watch Documentary</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#5">Nav</a>
+                        <a class="nav-link" href="#5">Get Involved</a>
                     </li>
                 </ul>
                 <button class="btn" type="submit">Donate</button>
@@ -51,7 +51,8 @@
         </nav>
     </header>
     <section class="page-section" id="0">
-        <img src="assets/img/LakeO-desktop.png" class="img-fluid landing">
+        <img src="assets/img/LakeO-desktop.png" id="desktop1" class="img-fluid landing">
+        <img src="assets/img/LakeO-mobile.png" id="mobile1" class="img-fluid landing">
         <div class="container">
             <div class="row justify-content-center titleText">
                 <div class="col-10">
@@ -66,6 +67,16 @@
                     <p class="text-left">
                         Sometimes referred to as Florida’s inland sea, Lake Okeechobee is the largest freshwater lake in Florida. With an impressive surface area of 730 square miles, the name “Okeechobee” is the Hitchiti word meaning big water. The lake is vital to the surrounding animal and plant life and serves as an essential source of water for people and farms in the region. 
                     </p>
+
+                </div>
+            </div>
+          </div>
+          <div class="getstart">
+            <div class="row">
+              <a class="text-center" href="#1">Get Started</a>
+            </div>
+            <div class="row justify-content-center">
+              <img src="assets/img/arrow.png">
                     <p class="text-left">
                         In recent decades, Lake Okeechobee and surrounding areas have been battling harmful algal blooms caused by excessive nutrients from agricultural and urban activities. The lake is filled with nutrient-rich runoff containing fertilizer, manure, and sewage. They get heated in high temperatures in the summer months that cause the exponential growth of the toxic blue-green algae. The build-up of these algae gets spread by the heavy rains of the wet season, leading them to flow into the Lake and then toward Florida’s west and east coast as water is released through the canal systems.                    </p>
                 </div>
@@ -80,15 +91,29 @@
                     </p>
                 </div>
             </div>
-        </div>
+          </div>
     </section>
     <section class="page-section" id="1">
-        <div class="img-wrapper">
-            <img src="assets/img/fish_2.png" class="img-fluid">
-            <img src="assets/img/fish_1.png" class="img-fluid transition">
-        </div>
         <div class="container">
-            <div class="row justify-content-center">
+          <div class="row justify-content-center leavehalfspace">
+              <div class="col-10">
+                  <h1 class="text-center">Lake O’s health is at stake</h1>
+                  <p>
+                      In recent decades, Lake Okeechobee and surrounding areas have been battling harmful algal blooms caused by excessive nutrients from
+                      agricultural and urban activities. The lake is filled with nutrient-rich runoff containing fertilizer, manure, and sewage. They get
+                      heated in high temperatures in the summer months that cause the exponential growth of the toxic blue-green algae. The build-up of
+                      these algae gets spread by the heavy rains of the wet season, leading them to flow into the Lake and then toward Florida’s west and east
+                      coast as water is released through the canal systems.
+                  </p>
+              </div>
+          </div>
+        </div>
+          <div class="img-wrapper">
+              <img src="assets/img/fish_2.png" class="img-fluid">
+              <img src="assets/img/fish_1.png" class="img-fluid transition">
+          </div>
+          <div class="container">
+            <div class="row justify-content-center leavehalfspace">
                 <div class="col-10">
                     <h1 class="text-center">What are hamrful algal blooms & what causes them?</h1>
                 </div>
@@ -100,8 +125,11 @@
             </div>
         </div>
     </section>
-    <section class="page-section" id="2">
-        <div class="container">
+    <section>
+      <img src="assets/img/bird.jpg" class="img-fluid">
+    </section>
+    <section class="page-section" id="2" >
+        <div class="container leavehalfspace">
             <div class="row justify-content-center">
                 <div class="col-10 blcok">
                     <h1 class="text-center">Impact on Biodiversity</h1>
@@ -112,7 +140,7 @@
             </div>
         </div>
         <div class="model">
-          <video src="assets/video/3d2.mp4" preload="auto"></video>
+          <video src="assets/video/3d.mp4"></video>
         </div>
     </section>
     <section class="photos">
@@ -129,7 +157,7 @@
         <img src="assets/img/p4.jpeg" alt="p4">
       </div>
     </section>
-    <section>
+    <section class="leavespace"  id='3'>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-10">
@@ -138,11 +166,11 @@
             </div>
         </div>
     </section>
-    <div class="page-section" id='3'>
+    <div class="page-section">
         <div id="map"></div>
         <div id="story"></div>
     </div>
-     <section class="page-section" id="4">
+     <section class="page-section leavespace" id="4">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-10">
@@ -153,24 +181,26 @@
             </div>
         </div>
     </section>
-    <section class="page-section" id="5">
+    <section class="page-section" id="5" style="background-color:#826864;">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-4"></div>
-                <div class="col-6">
-                    <h1 class="text-center">Get involved</h1>
+                <div class="col-5">
+                  <img src="assets/img/lake-o-care-for-land.jpg" alt="a1" id="changable-img" class="img-fluid">
+                </div>
+                <div class="col-5">
+                    <h1 class="text-center">Working together to fix this problem.</h1>
                     <p>
                         We are the problem, but we are also the solution. By following some simple steps, we can help prevent algal blooms.
                     </p>
                     <div class="accordion" id="collapsible">
                         <div id="collapse-btn-group">
-                            <button class="btn" type="button" data-toggle="collapse" data-target="#care-collapse"  aria-expanded="false" aria-controls="collapseOne">
+                        <button class="btn" type="button" onclick="changeImage(1);" data-toggle="collapse" data-target="#care-collapse"  aria-expanded="false" aria-controls="collapseOne">
                                 Care for your land
                             </button>
-                            <button class="btn" type="button" data-toggle="collapse" data-target="#mindful-collapse" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="btn" type="button" onclick="changeImage(2);" data-toggle="collapse" data-target="#mindful-collapse" aria-expanded="false" aria-controls="collapseTwo">
                                 Mindful farming
                             </button>
-                            <button class="btn" type="button" data-toggle="collapse" data-target="#future-collapse" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="btn" type="button" onclick="changeImage(3);" data-toggle="collapse" data-target="#future-collapse" aria-expanded="false" aria-controls="collapseThree">
                                 A cleaner future
                             </button>
                         </div>
@@ -404,12 +434,26 @@
         </div>
     </section>
     <section>
-        <div class="container">
+        <div class="container" style="padding-top:1em;">
             <div class="row justify-content-center footer">
+              <div class="col-md-4 mt-md-0 mt-3">
+                <p>Lake Okeechobee Save O</p>
+              </div>
+              <div class="col-md-2 mb-md-0 mb-3">
+                <a href="#!">Contact Us</a>
+              </div>
+              <div class="col-md-2 mb-md-0 mb-3">
+                <a href="about.html">About Us</a>
+              </div>
+              <div class="col-md-2 mb-md-0 mb-3">
+                <a href="https://com.miami.edu/interactive-media-mfa/">About UMiami IMFA</a>
+              </div>
+              <div class="col-md-2 mb-md-0 mb-3">
+                <a href="https://fl.audubon.org/">About Audubon Florida</a>
+              </div>
             </div>
         </div>
     </section>
-
 
     <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

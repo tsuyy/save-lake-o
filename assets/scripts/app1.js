@@ -1,16 +1,15 @@
+/* ==========================================================================
+    Scene1
+   ========================================================================== */
 const model = document.querySelector(".model");
 const video = model.querySelector("video");
-//const text = model.querySelector("h1");
-//END SECTION
-//const section = document.querySelector("section");
-//const end = section.querySelector("h1");
 
 //SCROLLMAGIC
 const controller = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
-  duration: 5600,
+  duration: 14000,
   triggerElement: model,
   triggerHook: 0
 })
@@ -18,24 +17,13 @@ let scene = new ScrollMagic.Scene({
   .setPin(model)
   .addTo(controller);
 
-//Text Animation
-// const textAnim = TweenMax.fromTo(text, 3, { opacity: 1 }, { opacity: 0 });
-//
-// let scene2 = new ScrollMagic.Scene({
-//   duration: 6000,
-//   triggerElement: model,
-//   triggerHook: 0
-// })
-//   .setTween(textAnim)
-//   .addTo(controller);
-
 //Video Animation
-let accelamount = 0.05;
+let accelamount = 0.15;
 let scrollpos = 0;
 let delay = 0;
 
 scene.on("update", e => {
-  scrollpos = (e.scrollPos-2200) / 200;
+  scrollpos = (e.scrollPos-2700) / 500;
   console.log(e.scrollPos);
 });
 
@@ -44,4 +32,34 @@ setInterval(() => {
   //console.log(scrollpos, delay);
 
   video.currentTime = delay;
-}, 33.3);
+}, 99.9);
+
+/* ==========================================================================
+    Scene 2
+   ========================================================================== */
+// const model1 = document.querySelector(".model1");
+// const video1 = model1.querySelector("video");
+//
+// //Scenes
+// let scene1 = new ScrollMagic.Scene({
+//   duration: 3000,
+//   triggerElement: model1,
+//   triggerHook: 0
+// })
+//   //.addIndicators()
+//   .setPin(model1)
+//   .addTo(controller);
+//
+//   let delay1 = 0;
+//
+//   scene1.on("update", e => {
+//     scrollpos = (e.scrollPos-5200) / 200;
+//     console.log(e.scrollPos);
+//   });
+//
+//   setInterval(() => {
+//     delay1 += (scrollpos - delay1) * accelamount;
+//     //console.log(scrollpos, delay);
+//
+//     video1.currentTime = delay1;
+//   }, 66.6);
