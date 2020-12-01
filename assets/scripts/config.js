@@ -46,13 +46,13 @@ var config = {
             },
             onChapterEnter: [
                 {
-                    layer: 'st-augustine',
+                    layer: 'sa-wf',
                     opacity: 0.9
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'st-augustine',
+                    layer: 'sa-wf',
                     opacity: 0
                 }
             ]
@@ -102,7 +102,7 @@ var config = {
             },
             onChapterEnter: [
                 {
-                    layer: 'county-population',
+                    layer: 'county-outline',
                     opacity: 0.9
                 },
                 {
@@ -117,7 +117,7 @@ var config = {
                     opacity: 0
                 },
                 {
-                    layer: 'county-population',
+                    layer: 'county-outline',
                     opacity: 0
                 }
             ]
@@ -209,13 +209,13 @@ var config = {
             },
             onChapterEnter: [
                 {
-                    layer: 'water-farm',
+                    layer: 'sa-wf',
                     opacity: 0.9
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'water-farm',
+                    layer: 'sa-wf',
                     opacity: 0
                 }
             ]
@@ -265,7 +265,7 @@ var config = {
             },
             onChapterEnter: [
                 {
-                    layer: 'county-population',
+                    layer: 'county-outline',
                     opacity: 0.9
                 },
                 {
@@ -280,7 +280,7 @@ var config = {
                     opacity: 0
                 },
                 {
-                    layer: 'county-population',
+                    layer: 'county-outline',
                     opacity: 0
                 }
             ]
@@ -298,21 +298,21 @@ var config = {
             },
             onChapterEnter: [
                 {
-                    layer: 'crops',
+                    layer: 'veg',
                     opacity: 1
                 },
                 {
-                    layer: 'crops-label',
+                    layer: 'veg-label',
                     opacity: 0.9
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'crops',
+                    layer: 'veg',
                     opacity: 0
                 },
                 {
-                    layer: 'crops-label',
+                    layer: 'veg-label',
                     opacity: 0
                 }
             ]
