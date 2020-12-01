@@ -289,7 +289,7 @@ var config = {
             id: '10',
             title: '',
             image: '',
-            description: '<div id="nav"><a id="sugarcane" href="#">Sugarcane</a><a id="citrus" href="#">Citrus</a><a id="cattle" href="#">Cattle / Calf</a><a id="veg" href="#">Vegetables</a></div><br/>Florida’s top agricultural industries include cattle/calf livestock with many of the ranches located north of Lake Okeechobee, citrus with many of the farms to the southwest, and sugarcane with many of the farms south and southwest of the lake.',
+            description: 'Florida’s top agricultural industries include cattle/calf livestock with many of the ranches located north of Lake Okeechobee, citrus with many of the farms to the southwest, and sugarcane with many of the farms south and southwest of the lake.',
             location: {
                 center: [-81.29489, 26.92825],
                 zoom: 8.7,
@@ -319,6 +319,102 @@ var config = {
         },
         {
             id: '11',
+            title: '',
+            image: '',
+            description: '',
+            location: {
+                center: [ -81.29489, 26.92825],
+                zoom: 8.7,
+                pitch: 0,
+                bearing: 0
+            },
+            onChapterEnter: [
+                {
+                    layer: 'citrus',
+                    opacity: 1
+                },
+                {
+                    layer: 'citrus-label',
+                    opacity: 0.9
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'citrus',
+                    opacity: 0
+                },
+                {
+                    layer: 'citrus-label',
+                    opacity: 0
+                }
+            ]
+        },
+        {
+            id: '12',
+            title: '',
+            image: '',
+            description: '',
+            location: {
+                center: [ -81.29489, 26.92825],
+                zoom: 8.7,
+                pitch: 0,
+                bearing: 0
+            },
+            onChapterEnter: [
+                {
+                    layer: 'cattle',
+                    opacity: 1
+                },
+                {
+                    layer: 'cattle-label',
+                    opacity: 0.9
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'cattle',
+                    opacity: 0
+                },
+                {
+                    layer: 'cattle-label',
+                    opacity: 0
+                }
+            ]
+        },
+        {
+            id: '13',
+            title: '',
+            image: '',
+            description: '',
+            location: {
+                center: [ -81.29489, 26.92825],
+                zoom: 8.7,
+                pitch: 0,
+                bearing: 0
+            },
+            onChapterEnter: [
+                {
+                    layer: 'sugarcane',
+                    opacity: 1
+                },
+                {
+                    layer: 'sugarcane-label',
+                    opacity: 0.9
+                }
+            ],
+            onChapterExit: [
+                {   
+                    layer: 'sugarcane',
+                    opacity: 0
+                },
+                {
+                    layer: 'sugarcane-label',
+                    opacity: 0
+                }
+            ]
+        },
+        {
+            id: '14',
             title: '',
             image: './assets/img/lake-o.jpg',
             description: 'The future of Lake Okeechobee is hopeful. Communities are coming together to contribute towards the health of our beautiful Lake Okeechobee. Each of us can be a part of the solution.',
