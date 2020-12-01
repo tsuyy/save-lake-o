@@ -214,8 +214,6 @@ $(document).ready(function() {
             "raster-opacity": 0
             }
         });
-    
-
     });
             
     // setup resize event
