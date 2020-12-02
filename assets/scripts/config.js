@@ -175,7 +175,7 @@ var config = {
         {
             id: '06',
             title: '1980s – 2010s',
-            image: '',
+            image: './assets/img/algal_bloom_legend.png',
             description: 'Major algal blooms throughout the 1980s and 1990s caused as a result of legacy nutrients trapped in the earth, and sewerage through the canal systems prompted the creation of a series of plans. This includes the Surface Water Improvement and Management Plan in 1989, the Florida Harmful Algal Bloom Task Force (HABTF ) in 1996, the Lake Okeechobee Protection Act in 2000, and the Northern Everglades and Estuaries Protection Program in 2007.',
             location: {
                 center: [ -81.29489, 26.92825],

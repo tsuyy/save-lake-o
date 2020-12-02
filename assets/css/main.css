@@ -55,13 +55,9 @@ section {
     z-index: 1030;
 }
 
-/* .scrolled-down{
-     transform:translateY(-100%); transition: all 0.3s ease-in-out;
+#section4 {
+    background-color: azure;
 }
-
-.scrolled-up{
-     transform:translateY(0); transition: all 0.3s ease-in-out;
-} */
 
 .block {
     padding: 5rem 0 5rem 0;
@@ -325,6 +321,7 @@ and (max-width: 1224px) {
 
 .adb-logo {
     width: 16vw;
+    margin-left: 3em;
 }
 
 #desktop1 {display:block;}
