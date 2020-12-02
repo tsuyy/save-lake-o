@@ -175,7 +175,7 @@ var config = {
         {
             id: '06',
             title: '1980s – 2010s',
-            image: './assets/img/algal_bloom_legend.png',
+            image: '',
             description: 'Major algal blooms throughout the 1980s and 1990s caused as a result of legacy nutrients trapped in the earth, and sewerage through the canal systems prompted the creation of a series of plans. This includes the Surface Water Improvement and Management Plan in 1989, the Florida Harmful Algal Bloom Task Force (HABTF ) in 1996, the Lake Okeechobee Protection Act in 2000, and the Northern Everglades and Estuaries Protection Program in 2007.',
             location: {
                 center: [ -81.29489, 26.92825],
@@ -199,7 +199,7 @@ var config = {
         {
             id: '07',
             title: '',
-            image: '',
+            image: './assets/img/algal_bloom_legend.png',
             description: 'By 2016, Harmful algae blooms cover 33 square miles of Lake Okeechobee. In 2018 and 2019 more harmful algal blooms spur a state of emergency. Blooms spread from Lake Okeechobee through the canal systems and across the state through the Okeechobee Waterway leading out to the Atlantic Ocean on the east coast and the Gulf of Mexico to the west.This results in the Everglades Agricultural Area Storage Reservoir Project by the U.S. Army Corps of Engineers to reduce the risk from harmful algal blooms.',
             location: {
                 center: [ -81.29489, 26.92825],

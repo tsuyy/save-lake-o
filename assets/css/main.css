@@ -56,7 +56,6 @@ section {
 }
 
 #section4 {
-    background-color: azure;
 }
 
 .block {
@@ -65,7 +64,7 @@ section {
 
 .img-wrapper {
     display: grid;
-    height: 60vh;
+    height: 50vh;
 }
 
 img.transition {
@@ -316,7 +315,7 @@ and (max-width: 1224px) {
 }
 
 .bio-block {
-    height: 80vh;
+    height: 85vh;
 }
 
 .adb-logo {
