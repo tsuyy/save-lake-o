@@ -274,6 +274,20 @@ span#gs {
   width: 80vh;
 }
 
+
+/* accodions ----------- */
+
+.accordion .acd-btn {
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    margin: 1rem;
+}
+
+div.card-header {
+    padding: 0em!important;
+    margin-bottom: 0;
+}
+
 @media only screen
 and (max-width: 1224px) {
   .titleText{
