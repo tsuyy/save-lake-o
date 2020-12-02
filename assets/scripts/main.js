@@ -177,7 +177,7 @@ $(document).ready(function() {
     map.on('load', function() {
         map.addSource("hw", {
             "type": "image",
-            "url": "https://raw.githubusercontent.com/tsuyy/colab-2020/main/assets/img/cw.png",
+            "url": "https://raw.githubusercontent.com/tsuyy/colab-2020/main/assets/img/hw.png",
             "coordinates": [
                 [-81.91691, 28.55452 ],
                 [-80.20719, 28.55452 ],
@@ -197,7 +197,7 @@ $(document).ready(function() {
 
         map.addSource("cw", {
             "type": "image",
-            "url": "https://raw.githubusercontent.com/tsuyy/colab-2020/main/assets/img/hw.png",
+            "url": "https://raw.githubusercontent.com/tsuyy/colab-2020/main/assets/img/cw.png",
             "coordinates": [
                 [-82.03354, 27.23854 ],
                 [-79.98204, 27.23854],
