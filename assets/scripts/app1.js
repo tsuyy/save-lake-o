@@ -33,33 +33,3 @@ setInterval(() => {
 
   video.currentTime = delay;
 }, 99.9);
-
-/* ==========================================================================
-    Scene 2
-   ========================================================================== */
-// const model1 = document.querySelector(".model1");
-// const video1 = model1.querySelector("video");
-//
-// //Scenes
-// let scene1 = new ScrollMagic.Scene({
-//   duration: 3000,
-//   triggerElement: model1,
-//   triggerHook: 0
-// })
-//   //.addIndicators()
-//   .setPin(model1)
-//   .addTo(controller);
-//
-//   let delay1 = 0;
-//
-//   scene1.on("update", e => {
-//     scrollpos = (e.scrollPos-5200) / 200;
-//     console.log(e.scrollPos);
-//   });
-//
-//   setInterval(() => {
-//     delay1 += (scrollpos - delay1) * accelamount;
-//     //console.log(scrollpos, delay);
-//
-//     video1.currentTime = delay1;
-//   }, 66.6);
