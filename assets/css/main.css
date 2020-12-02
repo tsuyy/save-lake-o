@@ -43,10 +43,6 @@ section {
     background-color: #fafafa
 }
 
-.landing {
-    margin-top: -5em!important;
-}
-
 .smart-scroll{
     position: fixed;
     top: 0;
@@ -238,7 +234,7 @@ img.transition {
 .getstart{
   display:flex;
   position: absolute;
-  bottom:15rem;
+  bottom: 10rem;
   left:50%;
   font-size: 1.2em;
   font-weight:bold;
@@ -263,10 +259,10 @@ span#gs {
 }
 
 .titleText{
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  width: 80vh;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 80vh;
 }
 
 
