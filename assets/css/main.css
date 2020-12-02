@@ -108,6 +108,16 @@ img.transition {
     object-fit: cover;
 }
 
+.f_video {
+    width: 100vw;
+    background-color: black;
+  }
+
+.f_video iframe {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 /* ==========================================================================
     Mapbox
     ========================================================================== */
@@ -163,7 +173,7 @@ img.transition {
         font-size: 0.9rem;
         line-height: 1.7rem;
     }
-    
+
     .dark {
         color: #fafafa;
         background-color: #000;
@@ -229,6 +239,7 @@ img.transition {
 
 /* first paragraph ----------- */
 .getstart{
+  display:flex;
   position: absolute;
   bottom:8px;
   left:50%;
