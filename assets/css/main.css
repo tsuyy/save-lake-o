@@ -233,7 +233,7 @@ img.transition {
 .crop-to-fit:nth-child(3){
   justify-content:flex-start;
 }
-.crop-to-fit:hover {flex-grow: 3;}
+.crop-to-fit:hover {flex-grow: 5;}
 
 .crop-to-fit:not(:hover)>img{
   opacity: 0.5;
@@ -308,7 +308,7 @@ and (max-width: 1224px) {
 .names{
     padding:1em 0;
   }
-  
+
 .titleText p,
 .block p,
 .bio-block p {
