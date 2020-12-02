@@ -344,7 +344,7 @@ var config = {
             id: '12',
             title: 'Truck and Row Crops',
             image: './assets/img/veg.jpg',
-            description: 'Palm Beach County has the highest percentage of irregated land used at 17% for the growing vegetables.',
+            description: 'Palm Beach County has the highest percentage of irrigated land used at 17% for the growing vegetables.',
             location: {
                 center: [-81.29489, 26.92825],
                 zoom: 8.7,
@@ -440,7 +440,7 @@ var config = {
             id: '15',
             title: 'Sugarcane Farms',
             image: './assets/img/sugarcane.jpg',
-            description: 'Sugarcane production is high in four of the five counties with 74% of land in Palm Beach County used for growing.',
+            description: 'Sugarcane production is high in four of the five counties with 74% of irrigated land in Palm Beach County used for growing.',
             location: {
                 center: [ -81.29489, 26.92825],
                 zoom: 8.7,

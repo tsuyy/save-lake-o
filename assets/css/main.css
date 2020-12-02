@@ -243,12 +243,17 @@ img.transition {
   text-decoration: none;
 }
 
+.getstart img {
+    padding-top: 1rem;
+}
+
 .titleText{
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 10%;
   width: 80vh;
 }
+
 @media only screen
 and (max-width: 1224px) {
   .titleText{
