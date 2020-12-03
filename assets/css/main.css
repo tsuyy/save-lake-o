@@ -30,6 +30,14 @@ body {
     overflow-x: hidden;
 }
 
+h4 {
+    font-weight: bold;
+  font-size: 100%;
+}
+
+h5 {
+  font-size: 105%;
+}
 
 p {
     font-size: 1.15rem;
