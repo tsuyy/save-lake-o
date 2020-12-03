@@ -30,6 +30,10 @@ body {
     overflow-x: hidden;
 }
 
+h1 {
+    font-weight: bold;
+}
+
 h4 {
     font-weight: bold;
   font-size: 100%;
@@ -104,6 +108,11 @@ img.transition {
 .footer div a:hover {
     text-decoration: none;
     color: #ee8e6c;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ========================
