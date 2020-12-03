@@ -260,6 +260,10 @@ $(window)
 
 function changeImage(x)
 {
+    $('.acd-btn').removeClass('acd-active').addClass('inactive');
+    $(this.element).removeClass('inactive').addClass('acd-active');
+     
+
   var img = document.getElementById("changable-img");
   switch (x) {
     case 1:
@@ -278,3 +282,6 @@ function changeImage(x)
   img.src=imgsrc;
   return false;
 }
+
+
+

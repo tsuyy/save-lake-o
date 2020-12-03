@@ -269,12 +269,37 @@ span#gs {
 }
 
 
-/* accodions ----------- */
+/* accordeons ----------- */
 
+.action-items {
+    background: #816865;
+    color: #fff;
+}
+
+.action-items-right {
+    padding-top: 45px;
+}
+
+.action-items-right h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.accordion {
+    margin-top: 30px;
+}
 .accordion .acd-btn {
     border-radius: 2em;
     padding: 0.5em 1em;
     margin: 1rem;
+    background: #7a625f;
+    font-weight: bold;
+    color: #fff;
+}
+
+.acd-active {
+    background: red;
 }
 
 div.card-header {
