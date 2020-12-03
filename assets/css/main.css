@@ -240,7 +240,7 @@ img.transition {
   align-items: center;
   overflow: hidden;
 }
-.crop-to-fit:nth-child(2){
+.crop-to-fit:nth-child(3){
   justify-content:flex-start;
 }
 .crop-to-fit:hover {flex-grow: 5;}
