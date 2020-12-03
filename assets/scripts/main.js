@@ -276,7 +276,7 @@ function changeImage(x)
     imgsrc = "assets/img/lake-o-cleaner-future.jpg";
     break;
     case 4:
-    imgsrc = "assets/img/lake-o-education.png";
+    imgsrc = "assets/img/lake-o-education.jpg";
     break;
   }
   img.src=imgsrc;

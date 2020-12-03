@@ -240,7 +240,7 @@ img.transition {
   align-items: center;
   overflow: hidden;
 }
-.crop-to-fit:nth-child(3){
+.crop-to-fit:nth-child(2){
   justify-content:flex-start;
 }
 .crop-to-fit:hover {flex-grow: 5;}
@@ -288,7 +288,7 @@ span#gs {
 /* accordeons ----------- */
 
 .action-items {
-    background: #816865;
+    background: #97b480;
     color: #fff;
 }
 
