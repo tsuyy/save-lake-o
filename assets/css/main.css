@@ -299,7 +299,7 @@ span#gs {
 }
 
 .acd-active {
-    background: red;
+    background: #ee8d6c !important;
 }
 
 div.card-header {
