@@ -309,8 +309,12 @@ span#gs {
     border-radius: 2em;
     padding: 0.5em 1em;
     margin: 1rem;
-    background: #7a625f;
+    background: #708c5a;
     font-weight: bold;
+    color: #fff;
+}
+.accordion .acd-btn:hover {
+    background: #86a36f;
     color: #fff;
 }
 
