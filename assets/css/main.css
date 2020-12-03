@@ -62,7 +62,8 @@ section {
     z-index: 1030;
 }
 
-#section4 {
+#desktop1, .full-width {
+    width: 100vw!important;
 }
 
 .block {
@@ -96,6 +97,14 @@ img.transition {
     margin-left: 2em;
 }
 
+.footer div a {
+    color: #000;
+}
+
+.footer div a:hover {
+    text-decoration: none;
+    color: #ee8e6c;
+}
 
 /* ========================
     model scroll animation
@@ -222,7 +231,6 @@ img.transition {
   width: 100%;
   height: 90%;
   display: flex;
-  margin-top: -1.61em;
 }
 
 .crop-to-fit {
