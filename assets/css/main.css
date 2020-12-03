@@ -300,11 +300,28 @@ span#gs {
 
 .acd-active {
     background: #ee8d6c !important;
+    color: #fff;
 }
 
 div.card-header {
     padding: 0em!important;
     margin-bottom: 0;
+}
+
+.card-header {
+    background:transparent;
+}
+
+.card-header .btn {
+    font-weight: bold;
+    color: #fff;
+    margin-left: 0;
+}
+
+.card {
+    border: none !important;
+    background-color: transparent !important;
+
 }
 
 @media only screen
