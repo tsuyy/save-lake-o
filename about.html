@@ -16,34 +16,35 @@
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
 </head>
 <body>
-    <header>
-      <nav class="navbar smart-scroll navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Brand</a>
+  <header>
+    <nav class="navbar smart-scroll navbar-expand-lg navbar-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="main_nav">
             <ul class="navbar-nav nav-items">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Lake O</a>
+                    <a class="nav-link active" href="#section0">Lake O</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#section1">Algal Blooms</a>
+                    <a class="nav-link" href="#section1">Algal Blooms</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#section2">History</a>
+                    <a class="nav-link" href="#section2">History</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#section3">Watch Video</a>
+                    <a class="nav-link" href="#section3">Watch Video</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Our Team</a>
+                    <a class="nav-link" href="about.html">Our Team</a>
+                </li>
+                <li>
+                  <button class="btn acd-active" onclick="location.href='#section4'">Get Involved</button>
                 </li>
             </ul>
-            <button class="btn" onclick="location.href='index.html#section4'">Get Involved</button>
         </div>
-      </nav>
-    </header>
+    </nav>
+</header>
     <section>
       <div class="container" align="center">
         <div class="row justify-content-center">
@@ -112,26 +113,23 @@
         <h6>John Williamson, Florida Cattlemen's Association</h6>
       </div>
     </section>
-    <section>
-        <div class="container" style="padding-top:1em;">
-            <div class="row justify-content-center footer">
-              <div class="col-md-4 mt-md-0 mt-3">
-                <p>Save Lake O</p>
-              </div>
-              <div class="col-md-2 mb-md-0 mb-3">
-                <a href="#">Contact Us</a>
-              </div>
-              <div class="col-md-2 mb-md-0 mb-3">
-                <a href="#">Our Team</a>
-              </div>
-              <div class="col-md-2 mb-md-0 mb-3">
-                <a href="https://com.miami.edu/interactive-media-mfa/">About UMiami IMFA</a>
-              </div>
-              <div class="col-md-2 mb-md-0 mb-3">
-                <a href="https://fl.audubon.org/">About Audubon Florida</a>
-              </div>
+    <section class="footer">
+      <div class="container" style="padding-top:1em;">
+          <div class="row justify-content-center">
+            <div class="col-md-3">
+              <p>Save Lake O</p>
             </div>
-        </div>
-    </section>
+            <div class="col-md-3">
+              <a href="about.html">About Us</a>
+            </div>
+            <div class="col-md-3">
+              <a href="https://com.miami.edu/interactive-media-mfa/">About UMiami IMFA</a>
+            </div>
+            <div class="col-md-3">
+              <a href="https://fl.audubon.org/">About Audubon Florida</a>
+            </div>
+          </div>
+      </div>
+  </section>
   </body>
   </html>
