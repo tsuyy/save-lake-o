@@ -263,23 +263,28 @@ function changeImage(x)
     $('.acd-btn').removeClass('acd-active').addClass('inactive');
     $(event.currentTarget).removeClass('inactive').addClass('acd-active');
      
+    var img = document.getElementsByClassName("bg-action");
 
-  var img = document.getElementById("changable-img");
+//   var img = document.getElementById("changable-img");
   switch (x) {
     case 1:
-    imgsrc = "assets/img/lake-o-care-for-land.jpg";
+    // imgsrc = "assets/img/lake-o-care-for-land.jpg";
+    $('.bg-action').css("background-image", "url('assets/img/lake-o-care-for-land.jpg')");
     break;
     case 2:
-    imgsrc = "assets/img/lake-o-mindful-farming.jpg";
+    // imgsrc = "assets/img/lake-o-mindful-farming.jpg";
+    $('.bg-action').css("background-image", "url('assets/img/lake-o-mindful-farming.jpg')");
     break;
     case 3:
-    imgsrc = "assets/img/lake-o-cleaner-future.jpg";
+    // imgsrc = "assets/img/lake-o-cleaner-future.jpg";
+    $('.bg-action').css("background-image", "url('assets/img/lake-o-cleaner-future.jpg')");
     break;
     case 4:
-    imgsrc = "assets/img/lake-o-education.jpg";
+    // imgsrc = "assets/img/lake-o-education.jpg";
+    $('.bg-action').css("background-image", "url('assets/img/lake-o-education.jpg')");
     break;
   }
-  img.src=imgsrc;
+//   img.style.backgroundImage= "url("+imgsrc+")";
   return false;
 }
 

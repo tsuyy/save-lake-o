@@ -294,6 +294,12 @@ span#gs {
     width: 80vh;
 }
 
+.bg-action {
+    background-image: url(../img/lake-o-care-for-land.jpg);
+    background-size: cover;
+    min-height: 800px;
+}
+
 
 /* accordeons ----------- */
 
