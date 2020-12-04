@@ -5,7 +5,7 @@
 
 *, *:before, *:after {
     box-sizing: inherit;
-    font-family: Proxima Nova, Verdana, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
 * {
@@ -262,10 +262,11 @@ img.transition {
 .getstart{
   display:flex;
   position: absolute;
-  bottom: 10rem;
+  bottom: 1rem;
   left:50%;
   font-size: 1.2em;
   font-weight:bold;
+  text-transform: uppercase;
 }
 .getstart a{
   color:black;
