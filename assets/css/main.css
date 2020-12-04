@@ -101,11 +101,13 @@ img.transition {
     margin-left: 2em;
 }
 
-.footer div a {
-    color: #000;
+.footer div a,
+.light p a {
+    color: #000!important;
 }
 
-.footer div a:hover {
+.footer div a:hover,
+.light p a:hover {
     text-decoration: none;
     color: #ee8e6c;
 }
