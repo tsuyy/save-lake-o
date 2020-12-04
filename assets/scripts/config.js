@@ -7,7 +7,7 @@ var config = {
     title: '',
     subtitle: '',
     byline: '',
-    footer: 'sources',
+    footer: 'Sources<br/><a href="https://floridadep.gov/dear/algal-bloom/content/algal-bloom-sampling-results" target="_blank">FDEP 2018 Algal Bloom Sampling Results</a><br/><a href="https://www.nass.usda.gov/Publications/AgCensus/2017/Full_Report/Volume_1,_Chapter_2_County_Level/Florida/">USDA 2017 Census of Agriculture</a><br/><a href="https://www.census.gov/newsroom/press-kits/2019/national-state-estimates.html" target="_blank">2019 United States Census</a><br/><a href="https://www.archives.gov/research/census/1930" target="_blank">1930 United States Census</a>',
     chapters: [
         {
             id: '00',
